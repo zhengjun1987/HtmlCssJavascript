@@ -1,0 +1,20 @@
+.p {
+    color:#ff3333;
+    font-weight:bold;
+    border-bottom:3px dashed #009933;
+    line-height:30px
+}
+
+.STYLE1 {
+    color:#009900
+}
+.STYLE2 {
+    color:#ff3300;
+    font-size:18px;
+    font-weight:bold
+}
+.STYLE3 {
+    color:#0000ff;
+    font-family:"黑体";
+    font-style:italic
+}

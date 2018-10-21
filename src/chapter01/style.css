@@ -1,0 +1,39 @@
+html {
+    min-width:776px;
+}
+body {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    color:#000;
+    font-size:14px;
+    line-height:160%;
+    text-align:center;
+    background:#6d89dd;
+    font-family:"宋体","新宋体",arial,verdana,sans-serif;
+}
+a {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    text-decoration:none;
+}
+
+a:link {
+    color:#E66133
+}
+a:visited {
+    color:#E66133
+}
+a:hover {
+    color:#637dbc;
+    text-decoration:underline;
+}
+pre {
+    text-indent:0;
+    background:#ddd;
+    margin:0px;
+    padding:0px;
+    color:blue;
+    text-align:left
+}
