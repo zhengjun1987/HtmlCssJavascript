@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>包含选择器</title>
+    <style type="text/css">
+        #header > p {
+            font-size:14px;
+            color:red
+        }
+        #main > p {
+            font-size:16px;
+            color:blue
+        }
+        #main span {
+            font-size:16px;
+            color:yellow
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h2>
+                <!--包含选择器只对自己id下的第一层子标签适用其样式，我的附庸的附庸，不是我的附庸-->
+                <p>头部区域第1段文本</p>
+            </h2>
+            <p>头部区域第2段文本</p>
+            <p>头部区域第3段文本</p>
+        </div>
+        <div id="main">
+            <p>主体区域第1<span>段文本</span></p>
+            <p>主体区域第2段文本</p>
+            <p>主体区域第3段文本</p>
+        </div>
+    </div>
+</body>
+</html>

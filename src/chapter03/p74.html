@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ONLY CHILD</title>
+    <style>
+        .post { height:30px;width:500px }
+        .post p { background:gray }
+        .post p:only-child { background:cyan }
+        .post a:only-of-type { background:orange }
+        .post p:empty { display:none }
+        .post p:only-child:hover { background:pink }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <p>第一段文本内容</p>
+        <p>第二段文本内容</p>
+    </div>
+    <div class="post">
+        <p>第三段文本内容</p>
+        <a href="#">引用链接</a>
+    </div>
+    <div class="post">
+        <p></p>
+    </div>
+</body>
+</html>

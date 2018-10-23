@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style type="text/css">
+        .pic_box {
+            border:solid 6px #bbb;
+            position:relative;
+            float:left
+        }
+        .pic_box img {
+            width:500px;
+            border:solid 1px #fff
+        }
+        .nav {
+            background:#999;
+            border:solid 1px #ccc;
+            padding:4px,12px;
+            float:left;
+            opacity:0.6;
+            position:absolute;
+            bottom:6px;
+            right:12px
+        }
+        .nav a {
+            float:left;
+            display:block;
+            height:20px;
+            width:20px;
+            -moz-border-radius:20px;
+            -webkit-border-radius:20px;
+            border-radius:10px;
+            line-height:20px;
+            text-align:center;
+            background:#f36;
+            color:green;
+            margin-right:5px
+            text-decoration:none
+        }
+        .nav a[id="first"] {
+            background:blue;
+            color:yellow;
+            font-weight:bold
+        }
+        <!--.nav a[href][title] {-->
+            <!--background:yellow;-->
+            <!--color:green-->
+        <!--}-->
+        .nav a:hover {
+            background:green;
+            color:#fff
+        }
+    </style>
+</head>
+<body>
+<div class="pic_box">
+    <img src="#"/>
+    <div class="nav">
+        <a href="#1" class="link item first" title="w3cplus" target="_blank" id="first">1</a>
+        <a href="#2" class="link active item" title="test website" target="_blank" lang="zh">2</a>
+        <a href="#3" class="links item" title="this is a link" lang="zh-cn">3</a>
+        <a href="#4" class="links item" target="_blank" lang="zh-cn">4</a>
+        <a href="#5" class="links item" title="zh-cn">5</a>
+        <a href="#6" class="links item" title="website link" target="_blank" lang="zh-cn">6</a>
+        <a href="#7" class="links item" title="open the website" target="_blank" lang="zh-cn">7</a>
+        <a href="#8" class="links item" title="this is a link" target="_blank" lang="zh-cn">8</a>
+        <a href="#9" class="links item" title="this is a link" target="_blank" lang="zh-cn">9</a>
+        <a href="#10" class="links item" title="this is a link" target="_blank" lang="zh-cn" id="last">10</a>
+    </div>
+</div>
+</body>
+</html>
