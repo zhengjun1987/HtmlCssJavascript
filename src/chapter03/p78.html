@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆表单</title>
+    <style>
+        input[type="input"] input[type="password"]{
+            border:1px #0f0 solid;
+            width:160px;
+            height:22px;
+            padding-left:20px;
+            margin:6px 0;
+            line-height:20px
+        }
+        input[type="input"]:disabled input[type="password"]:disabled {
+            background:#ddd 2px 2px;
+            border:1px solid #bbb
+        }
+
+    </style>
+</head>
+<body>
+<form action="#">
+    <label for="usrname">用户名</label>
+    <input type="text" name="usrname" id="usrname"/>
+    <input type="text" name="usrname1" id="usrname1" disabled="disabled" value="不可用"/>
+    <label for="password">密码</label>
+    <input type="password" name="password" id="password"/>
+    <input type="password" name="password1" id="password1" disabled="disabled" value="不可用"/>
+    <input type="submit" value="提交"/>
+</form>
+</body>
+</html>
