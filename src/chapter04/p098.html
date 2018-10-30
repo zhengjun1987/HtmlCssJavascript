@@ -10,12 +10,28 @@
         <progress id="progress" max="100"><span>0</span></progress>
     </p>
     <input type="button" value="显示进度" onclick="click1()">
+    <br/>
+    <meter value="0.3">十分之三</meter>
+    <meter value="0.6">60%</meter>
+    <br/>
+    <time datetime="2018-10-29">2018年10月29日</time><br/>
+    <time datetime="2018-10-29">10月29日</time><br/>
+    <time datetime="2018-10-29">今天</time><br/>
+    <time datetime="2018-10-2900:23Z">今天凌晨</time><br/>
+    <time datetime="2018-10-2900:23+9:00">今天凌晨美国时间</time>
 </section>
 <script>
 function click1(){
-    var progress = document.getElementById("progress");
+    var progress = document.getElementById('progress');
     progress.getElementByTagName("span")[0].textContent="0";
-    for(
+    for(var i = 0;i<=100;i++)
+        updateProgress(i);
+}
+
+function updateProgress(newValue){
+    var progress = document.getElementById('progress');
+    progress.value = newValue;
+    progress.getElementByTagName('span')[0].textContent=newValue;
 }
 </script>
 </body>
